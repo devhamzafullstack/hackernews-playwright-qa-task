@@ -13,10 +13,11 @@ export class HackerNewsPage {
 
     while (timestamps.length < count) {
       await this.pushToTimestampsArray(timestamps, count);
+      if (timestamps.length == count) break;
       await this.clickMore();
     }
 
-    return timestamps;
+    return timestamps.slice(0, count);
   }
 
   private async pushToTimestampsArray(timestamps: number[], count: number) {
@@ -30,6 +31,7 @@ export class HackerNewsPage {
         const timestamp = parseInt(titleAttr.split(" ")[1]);
         timestamps.push(timestamp);
       }
+      if (timestamps.length == count) break;
     }
   }
 
