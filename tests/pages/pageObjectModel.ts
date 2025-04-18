@@ -13,7 +13,7 @@ export class HackerNewsPage {
 
     while (timestamps.length < count) {
       await this.pushToTimestampsArray(timestamps, count);
-      if (timestamps.length == count) break;
+      if (timestamps.length >= count) break;
       await this.clickMore();
     }
 
@@ -31,7 +31,7 @@ export class HackerNewsPage {
         const timestamp = parseInt(titleAttr.split(" ")[1]);
         timestamps.push(timestamp);
       }
-      if (timestamps.length == count) break;
+      if (timestamps.length >= count) break;
     }
   }
 
