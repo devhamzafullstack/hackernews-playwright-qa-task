@@ -1,27 +1,55 @@
-# Hacker News Test Automation
+# 🐺 QA Wolf Take Home Assignment
 
-This repository contains the automated end-to-end testing framework for Hacker News using Playwright, TypeScript, GitHub Actions, Docker, and the Page Object Model (POM). The tests ensure the reliability of features like article sorting and pagination across different browsers.
+Welcome to the QA Wolf take home assignment for our [QA Engineer](https://www.task-wolf.com/apply-qae) role! We appreciate your interest and look forward to seeing what you come up with.
 
-## Key Features
-- **Cross-Browser Testing**: Ensures 100% test reliability across 5 major browsers.
-- **Pagination Race Condition**: Uses `Promise.all` atomic operations and network idle state management to resolve pagination issues.
-- **Page Object Model (POM)**: Designed architecture to reduce code duplication by 50% and improve maintainability.
-- **Containerized Test Environment**: Leverages the Playwright Docker image to enable consistent cross-browser testing.
-- **CI/CD Integration**: Implements a GitHub Actions pipeline that executes tests on push/pull requests with a 100% success rate.
+## Instructions
 
-### Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/hacker-news-test-automation.git
-    cd hacker-news-test-automation
-    ```
+This assignment has two questions as outlined below. When you are done, upload your assignment to our [application page](https://www.task-wolf.com/apply-qae):
 
-2. Install dependencies:
-    ```bash
-    npm install
-    ```
+### Question 1
 
-3. To run tests locally, use the following command:
-    ```bash
-    npm test
-    ```
+In this assignment, you will create a script on [Hacker News](https://news.ycombinator.com/) using JavaScript and Microsoft's [Playwright](https://playwright.dev/) framework.
+
+1. Install node modules by running `npm i`.
+
+2. Edit the `index.js` file in this project to go to [Hacker News/newest](https://news.ycombinator.com/newest) and validate that EXACTLY the first 100 articles are sorted from newest to oldest. You can run your script with the `node index.js` command.
+
+Note that you are welcome to update Playwright or install other packages as you see fit, however you must utilize Playwright in this assignment.
+
+### Question 2
+
+Why do you want to work at QA Wolf? Please record a short, ~2 min video using [Loom](https://www.loom.com/) that includes:
+
+1. Your answer
+
+2. A walk-through demonstration of your code, showing a successful execution
+
+The answer and walkthrough should be combined into _one_ video, and must be recorded using Loom as the submission page only accepts Loom links.
+
+## Frequently Asked Questions
+
+### What is your hiring process? When will I hear about next steps?
+
+This take home assignment is the first step in our hiring process, followed by a final round interview if it goes well. **We review every take home assignment submission and promise to get back to you either way within one week (usually sooner).** The only caveat is if we are out of the office, in which case we will get back to you when we return. If it has been more than one week and you have not heard from us, please do follow up.
+
+The final round interview is a 2-hour technical work session that reflects what it is like to work here. We provide a $150 stipend for your time for the final round interview regardless of how it goes. After that, there may be a short chat with our director about your experience and the role.
+
+Our hiring process is rolling where we review candidates until we have filled our openings. If there are no openings left, we will keep your contact information on file and reach out when we are hiring again.
+
+### Having trouble uploading your assignment?
+
+Be sure to delete you `node_modules`, then zip your assignment folder prior to upload.
+
+### How do you decide who to hire?
+
+We evaluate candidates based on three criteria:
+
+- Technical ability (as demonstrated in the take home and final round)
+- Customer service orientation (as this role is customer facing)
+- Alignment with our values (captured [here](https://www.notion.so/qawolf/QA-Wolf-QA-Engineer-Remote-156203a1e476459ea5e6ffca972d0efe))
+
+This means whether we hire you is based on how you do during our interview process, not on your previous experience (or lack thereof). Note that you will also need to pass a background check to work here as our customers require this.
+
+### How can I help my application stand out?
+
+We've found that our best hires have been the most enthusiastic throughout our process. If you are very excited about working here, please feel free to go above and beyond on this assignment.
